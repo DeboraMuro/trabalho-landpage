@@ -1,0 +1,101 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer{
+    background-color: #006494;
+}
+
+header{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    height: 30px;
+    width: 140px;
+}
+
+.primeirobotao button{
+    margin-right: 15px;
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #f77f00;
+    font-size: 10px;
+}
+
+.headeresquerda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+}
+
+p{
+    margin-left: 20px;
+}
+/*final do header*/
+
+.primeirasessao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #006494;
+}
+.primeirasessao div img{
+    width: 300px;
+    height: 400px;
+}
+
+/*final da primeira sessao*/
+
+.primeirasessao, .terceirasessao{
+    background-color: #ffffff;
+}
+
+.segundasessao, .quartasessao{
+    background-color: #3a86ff;
+}
+
+/*inicio da segunda sessao*/
+.segundasessao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.titulo{
+    font-size: 30px;
+}
+.segundobotao button{
+    background-color: #ffffff;
+    color: #006494;
+    border-color: #ffffff;
+    padding: 15px 25px;
+    font-size: 15px;
+}
+.fraseembaixodobotao{
+    font-size: 12px;
+}
+
+/*inicio da terceira sessao*/
+
+
+/*inicio do footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 30px;
+}
+
+.finalfooter{
+    margin-top: 10px;
+}
