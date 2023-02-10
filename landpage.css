@@ -7,11 +7,27 @@ header, footer{
     background-color: #006494;
 }
 
-header{
-    color: #ffffff;
+header, .header-esquerda, .linha, .terceira-linha{
     display: flex;
     justify-content: space-between;
+}
+
+.segunda-sessao, .terceira-sessao{
+    display: flex;
+    justify-content: column;
+}
+
+.segundo-botao, .terceira-linha div, .linha div, footer{
+    display: flex;
+    justify-content: center;
+}
+
+header{
     align-items: center;
+}
+
+header, .primeiro-botao button, .segunda-sessao, .quarta-sessao, footer{
+    color: #ffffff;
 }
 
 body{
@@ -23,9 +39,7 @@ img{
     width: 140px;
 }
 
-/*Unir em um css só todos os display flex e o q mais puder unificar*/
-
-.primeirasessao .conteudo .p-esquerda{
+.primeira-sessao .conteudo .p-esquerda{
     text-align: left;
 }
 
@@ -33,54 +47,52 @@ p{
     text-align: center;
 }
 
-.primeirobotao button{
+.primeiro-botao button{
     margin-right: 15px;
-    color: #ffffff;
+    font-size: 10px;
+    padding: 8px;
     border-color: #ffffff;
     background-color: #f77f00;
-    font-size: 10px;
 }
 
-.headeresquerda{
-    display: flex;
-    justify-content: space-between;
+.header-esquerda{
     align-items: center;
     margin-left: 5px;
 }
 
+.header-esquerda .texto-do-lado-da-logo{
+    margin-left: 15px;
+}
 /*final do header*/
+
 .conteudo{
     max-width: 1200px;
     margin: auto;
     width: 100%;
 }
 
-.primeirasessao .conteudo{
+.primeira-sessao .conteudo{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.primeirasessao div img{
+.primeira-sessao div img{
     width: 300px;
     height: 400px;
 }
-
 /*final da primeira sessao*/
 
-.primeirasessao, .terceirasessao{
+.primeira-sessao, .terceira-sessao{
     background-color: #ffffff;
     color: #006494;
 }
 
-.segundasessao, .quartasessao{
+.segunda-sessao, .quarta-sessao{
     background-color: #3a86ff;
-    color: #ffffff;
 }
 
 /*inicio da segunda sessao*/
-.segundasessao{
-    display: flex;
-    flex-direction: column;
+.segunda-sessao{
     justify-content: center;
     align-items: center;
 }
@@ -89,29 +101,23 @@ p{
     font-size: 30px;
 }
 
-.segundobotao{
-    display: flex;
-    justify-content: center;
-}
-
-.segundobotao button{
+.segundo-botao button{
+    padding: 15px 25px;
+    font-size: 15px;
     background-color: #ffffff;
     color: #006494;
     border-color: #ffffff;
-    padding: 15px 25px;
-    font-size: 15px;
 }
 
-.fraseembaixodobotao{
+.frase-embaixo-do-botao{
     font-size: 12px;
 }
 
 /*inicio da terceira sessao*/
-.terceirasessao{
-    display: flex;
-    flex-direction: column;
+.terceira-sessao{
     align-items: center;
 }
+
 .primeira-tabela-div, .terceira-linha{
     text-align: center;
 }
@@ -120,21 +126,18 @@ h3{
     text-align: center;
     margin-top: 35px;
 }
+
 .linha, .terceira-linha{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 5px;
 }
 
 .terceira-linha{
+    justify-content: center;
     margin-top: 5px;
     margin-bottom: 35px;
-    justify-content: center;
 }
 
 .terceira-linha div{
-    display: flex;
-    justify-content: center;
     align-items: center;
     border: solid 1px;
     padding-left: 20px;
@@ -143,8 +146,6 @@ h3{
 }
 
 .linha div{
-    display: flex;
-    justify-content: center;
     align-items: center;
     border: solid 1px;
     width: 20%;
@@ -153,7 +154,7 @@ h3{
 }
 
 /*inicio da quarta sessao*/
-.quartasessao .conteudo{
+.quarta-sessao .conteudo{
     display: flex;
 }
 
@@ -164,7 +165,6 @@ h3{
 
 .quarta-sessao-esquerda div{
     margin-bottom: 20px;
-    
 }
 
 .quarta-sessao-direita{
@@ -175,18 +175,15 @@ h1{
     font-size: 35px;
 }
 
-
 /*inicio do footer*/
 footer{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: #ffffff;
     font-size: 10px;
     padding: 30px;
 }
 
-.finalfooter{
+.final-footer{
     margin-top: 10px;
 }
